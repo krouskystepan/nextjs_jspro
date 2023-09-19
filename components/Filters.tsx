@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-const links = ['All', 'Next 13', 'Frontend', 'Backend', 'Fullstack'];
+const links = ['all', 'next 13', 'frontend', 'backend', 'fullstack'];
 
 const Filters = () => {
   const [active, setActive] = useState('');
