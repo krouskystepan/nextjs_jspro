@@ -2,7 +2,7 @@ const schema = {
   name: 'resource',
   title: 'Resource',
   type: 'document',
-  field: [
+  fields: [
     {
       name: 'title',
       title: 'Title',
@@ -12,8 +12,8 @@ const schema = {
     },
     {
       name: 'slug',
-      title: 'slug',
-      tpye: 'slug',
+      title: 'Slug',
+      type: 'slug',
       options: { source: 'title' },
     },
     {
@@ -40,13 +40,13 @@ const schema = {
     {
       name: 'category',
       title: 'Category',
-      tpye: 'string',
+      type: 'string',
       validation: (Rule: any) => Rule.required(),
       options: {
-        list: ['frontend', 'backend', 'next 13', 'fullstack", "other'],
+        list: ['frontend', 'backend', 'next 13', 'fullstack', 'other'],
       },
     },
   ],
 };
 
-export default schema
+export default schema;
