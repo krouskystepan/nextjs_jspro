@@ -1,3 +1,5 @@
+import Filters from '@/components/Filters';
+import SearchForm from '@/components/SearchForm';
 import React from 'react';
 
 const Page = () => {
@@ -7,7 +9,10 @@ const Page = () => {
         <div className='relative flex-center min-h-[274px] w-full flex-col rounded-xl bg-banner bg-cover bg-center text-center'>
           <h1 className='sm:heading-1 heading2 mb-6 text-center text-white'>JavaScript Mastery Resources</h1>
         </div>
+        < SearchForm />
       </section>
+
+      < Filters />
     </main>
   );
 };
