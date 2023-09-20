@@ -42,7 +42,7 @@ const ResourceCard = ({
           href={`/resource/${id}`}
           className="flex-center text-gradient_purple-blue body-semibold gap-1.5"
         >
-          Download now{' '}
+          Download now
           <Image src="/arrow-blue.svg" alt="" height={10} width={13} />
         </Link>
       </CardContent>
